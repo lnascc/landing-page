@@ -20,6 +20,8 @@ body {
   font-family: 'Nunito', sans-serif;
   background: linear-gradient(137deg, rgba(0,36,12,1) 0%, rgba(130,217,79,1) 46%, rgba(0,255,192,0.8547794117647058) 100%);
 
+  
+
 }
 
 .content {
@@ -28,7 +30,6 @@ body {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 6rem 1fr 1fr 2rem;
-
   grid-template-areas: 
     'header header'
     'main main'
@@ -74,7 +75,7 @@ main {
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  margin: 3.5rem 1rem
+  margin: 3.5rem 0
 }
 
 main h1 {
@@ -137,4 +138,48 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: rgba(54, 54, 54, 0.1);
+}
+
+/* desktop screen */
+
+@media(min-width: 907px) {
+  .content {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 6rem 1fr 2rem;
+
+    grid-template-areas:
+      'header header'
+      'left right'
+      'footer footer';
+
+  }
+  
+  header {
+    margin: 0 2rem;
+  }
+
+  main {
+    grid-area: left;
+    margin: 0 0 3rem 2rem;
+  }
+
+  .more {
+    justify-content: left;
+    align-items:flex-end;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .bg {
+    justify-content: right;
+    height: 30rem;
+    margin-right: 2rem;   
+  }
+
+  .bg img {
+    width: 30rem;
+
+  }
 }

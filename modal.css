@@ -64,3 +64,27 @@
   margin-top: 1rem;
   width: 90%;
 }
+
+/* desktop screen */
+
+@media(min-width: 907px) {
+  .modal-wrapper .modal {
+    width: 50%;
+  }
+
+  .modal-wrapper .modal input {
+    width: 25rem;
+  }
+
+  .modal-wrapper .modal .buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 7rem;
+  }
+
+  .modal-wrapper .modal .buttons .button {
+    width: 10rem;
+    
+
+  }
+}

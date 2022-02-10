@@ -16,6 +16,10 @@
 ### Register to receive an e-mail with information
 ![sreenshot-register](./images/screenshot-2.png)
 
+## Mobile Version 📱
+
+![mobile version](./images/mobileversion.gif)
+
 ---
 
 ## Warning ⚠️
